@@ -1,1 +1,11 @@
 <p>faqs works!</p>
+<button #btn (click)="clickEvent()" type="button" class="btn btn-dark">Evil Button</button>
+<p>Value in button is</p>
+<!-- (remember to type command "K" then "C" to comment this out)<button (dblclick) = "clickEvent()" type="button" class="btn btn-dark">Evil Button</button> -->
+<!-- And Command K and U is to "uncomment" it out.  -->
+
+<button #chicken (click)="switch(chicken)" type="button" class="btn btn-dark">Reveal Your Secret</button>
+
+<div *ngIf = "flip">
+    <p>I am visible.</p>
+</div>
